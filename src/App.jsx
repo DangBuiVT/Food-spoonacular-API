@@ -7,15 +7,19 @@ import ResultPage from "./components/Result";
 function App() {
   const [foodData, setFoodData] = useState([]);
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<SearchPage />} />
-        <Route
-          path="/result"
-          element={<ResultPage foodData={foodData} setFoodData={setFoodData} />}
-        />
-      </Routes>
-    </BrowserRouter>
+    <div className="App">
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<SearchPage />} />
+          <Route
+            path="/result"
+            element={
+              <ResultPage foodData={foodData} setFoodData={setFoodData} />
+            }
+          />
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
 }
 

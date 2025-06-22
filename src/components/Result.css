@@ -1,0 +1,56 @@
+.result-page {
+  width: 90%;
+  height: 90%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 4px solid rgb(49, 44, 12);
+  border-radius: 10px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  color: black;
+}
+
+::-webkit-scrollbar {
+  width: 8px; /* for vertical scrollbar */
+  height: 8px; /* for horizontal scrollbar */
+}
+
+/* Background of the track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+
+/* Scrollbar handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* On hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.result-individual {
+  display: flex;
+  border-bottom: 2px solid black;
+  padding: 10px 0;
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+}
+.result-individual h1 {
+  font-size: 2em;
+  padding: 0 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+.result-individual img {
+  height: 100px;
+  border: 2px solid black;
+  border-radius: 10px;
+}

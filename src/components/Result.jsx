@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
+import "./Result.css";
 
 export default function ResultPage({ foodData, setFoodData }) {
   const navigate = useNavigate();
@@ -20,7 +21,7 @@ export default function ResultPage({ foodData, setFoodData }) {
   return (
     <div className="result-page">
       {foodData.map((food) => (
-        <div key={food.id}>
+        <div key={food.id} className="result-individual">
           <h1>{food.title}</h1>
           <img src={food.image} alt="" />
         </div>
