@@ -68,7 +68,8 @@
   height: 40%;
   overflow: hidden;
   position: relative;
-  background-color: rgba(69, 59, 4, 0.6);
+  background-color: rgb(69, 59, 4);
+  z-index: -2;
 }
 .result-individual h1 {
   position: absolute;
@@ -76,9 +77,11 @@
   font-family: "Roboto", sans-serif;
   color: white;
   margin: 0;
+  width: 100%;
   top: 50%;
   transform: translateY(-50%);
   padding: 10px;
+  box-sizing: border-box;
 }
 .result-individual img {
   object-fit: cover;
@@ -87,4 +90,13 @@
   object-position: center;
   opacity: 60%;
   z-index: -1;
+}
+
+.result-individual:hover {
+  transform: scale(1.05);
+  transition: all ease 0.5s;
+}
+.result-individual:hover img {
+  opacity: 0.2;
+  transition: all ease 0.5s;
 }
