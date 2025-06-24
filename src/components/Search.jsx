@@ -12,7 +12,7 @@ export default function SearchPage() {
       <div className="search-section">
         <input
           type="text"
-          placeholder="Find your recipe (top 10)"
+          placeholder="Find your recipe (maximum 10 results)"
           value={inputVal}
           onChange={(e) => setInputVal(e.target.value)}
         />
